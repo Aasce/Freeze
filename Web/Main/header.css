@@ -9,6 +9,10 @@ header {
     background-image: url("../../Data/TH_B2_Data/header.png");
 }
 
+img.logo-page {
+    margin-bottom: 20px;
+}
+
 .header-img1 {
     height: 100px;
     position: absolute;

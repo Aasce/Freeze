@@ -1,22 +1,19 @@
 main {
     display: grid;
     grid-template-areas: 
-        "main-cell aside-cell"
+        "article-cell article-cell article-cell aside-cell"
     ;
-}
-
-.bg-home {
-    width: 100%;
+    column-gap: 20px;
 }
 
 article {
-    grid-area: main-cell;
+    grid-area: article-cell;
 }
 
 aside {
     grid-area: aside-cell;
 }
 
-article p {
-    padding: 3px;
+.bg-home {
+    width: 100%;
 }

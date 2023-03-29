@@ -18,7 +18,7 @@
 <body>
     <header class="header-page">
         <a href="../TrangChu/trangchu.html">
-            <img src="../../Data/TH_B1_Data/images/logo.png" alt="logo-page">
+            <img src="../../Data/TH_B1_Data/images/logo.png" alt="logo-page" class="logo-page">
         </a>
 
         <div class="header-img">
@@ -52,26 +52,28 @@
     <main>
         <fieldset>
             <legend>Đăng Nhập</legend>
-            <div>
+            <div class="login">
                 <img src="../../Data/TH_B1_Data/images/dangnhap/userlogin.png" alt="login-img">
+            
+                <form action="login.php" method="post">
+                    <label for="email" class="fa fa-envelope-o"></label>
+                    <input name="email" type="text">
+                    <br>
+                    
+                    <label for="passwork" class="fa fa-key"></label>
+                    <input name="passwork" type="passwork">
+                    <br>
+
+                    Bạn quên <a href="">Mật Khẩu?</a>
+                    <input type="checkbox" name="remember-login"> Ghi nhớ cho lần đăng nhập sau 
+                    <br>
+
+                    <input type="submit" value="Đăng Nhập">
+                    <input type="submit" value="Hủy">
+                </form>
+
             </div>
 
-            <form action="login.php" method="post">
-                <label for="email">Email</label>
-                <input name="email" type="text">
-                <br>
-                
-                <label for="passwork">Mật khẩu</label>
-                <input name="passwork" type="passwork">
-                <br>
-
-                <input type="submit" value="Đăng Nhập">
-                <input type="submit" value="Hủy">
-            </form>
-
-            Bạn quên <a href="">Mật Khẩu?</a>
-            <input type="checkbox" name="remember-login"> Ghi nhớ cho lần đăng nhập sau
-        
         </fieldset>
 
     </main>

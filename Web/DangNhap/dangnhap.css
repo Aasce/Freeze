@@ -1,0 +1,51 @@
+main {
+    margin-top: 30px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    width: fit-content;
+
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin: 12px 0px 16px;
+
+    color: #ed4190;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    line-height: 34px;
+}
+
+legend::after {
+    content: "";
+
+    height: 3px;
+    width: 100%;
+
+    transform: rotateX(-12deg);
+
+    display: block;
+    margin: 12px 0px 16px;
+
+    background-image: radial-gradient(#cddc39, #fff);
+
+}
+
+.login {
+    width: 50%;
+    margin: auto;
+}
+
+.login img {
+    min-width: 100%;
+}
