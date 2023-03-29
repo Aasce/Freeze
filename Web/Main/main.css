@@ -1,0 +1,12 @@
+main {
+    grid-area: main-cell;
+
+    width: 100vw;
+
+    border: 1px solid #ccc7c8 ;
+    border-radius: 5px;
+}
+
+main img {
+    border-radius: 5px;
+}

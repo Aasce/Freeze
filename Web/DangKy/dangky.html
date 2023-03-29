@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Ký Thành Viên</title>
+    <link rel="icon" href="../../Data/TH_B1_Data/images/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../Main/style.css">
+    <link rel="stylesheet" href="../Main/header.css">
+    <link rel="stylesheet" href="../Main/main.css">
+    <link rel="stylesheet" href="../Main/footer.css">
+
+    <link rel="stylesheet" href="dangky.css">
+</head>
+
+<body>
+    <header class="header-page">
+        <a href="../TrangChu/trangchu.html">
+            <img src="../../Data/TH_B1_Data/images/logo.png" alt="logo-page">
+        </a>
+
+        <div class="header-img">
+            <img src="../../Data/TH_B2_Data/header-img1.png" alt="header-img1" class="header-img1">
+            <img src="../../Data/TH_B2_Data/header-img2.png" alt="header-img2" class="header-img2">
+            <img src="../../Data/TH_B2_Data/header-img3.png" alt="header-img3" class="header-img3">
+        </div>
+
+        
+        <nav>
+            <div class="link">
+                <a href="../TrangChu/trangchu.html">Trang Chủ</a>
+                <a href="../GioiThieu/gioithieu.html">Giới Thiệu</a>
+                <a href="../SanPham/sanpham.html">Sản Phẩm</a>
+                <a href="../TinTuc/tintuc.html">Tin Tức</a>
+                <a href="../DangNhap/dangnhap.html">Đăng Nhập</a>
+                <a href="../DangKy/dangky.html">Đăng Ký</a>
+                <a href="../LienHe/lienhe.html">Liên Hệ</a>
+            </div>
+
+            <div class="header-search">
+                <form action="search.php" method="get">
+                    <input name="search" type="text" placeholder="Nhập nội dung cần tìm...">
+                    <button type="submit" class="fa fa-search search-button" title="Search"> </button>
+                    <button type="button" class="fa fa-shopping-cart shopping-cart-button" title="Shopping cart"> </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <fieldset>
+            <legend>ĐĂNG KÝ</legend>
+            <form action="signup.php" method="post">
+                <label for="email">Email</label>
+                <input name="email" type="text">
+                <br>
+                
+                <label for="passwork">Mật khẩu</label>
+                <input name="passwork" type="passwork">
+                <br>
+
+                <label for="retype-passwork">Nhập lại mật khẩu</label>
+                <input name="retype-passwork" type="passwork">
+                <br>
+
+                <label for="member-level">Cấp độ thành viên</label>
+                <input name="member-level" type="radio"> Bạc
+                <input name="member-level" type="radio"> Vàng
+                <input name="member-level" type="radio"> Bạch Kim
+                <br>
+
+                <label for="avt-upload">Ảnh đại diện</label>
+                <input type="file" name="avt-upload">
+
+                <p>
+                    Thông qua việc tạo tài khoản, bạn đồng ý với 
+                    <a href="">Điều khoản & Quyền riêng tư của chúng tôi</a>.
+                </p>
+
+                <input type="submit" value="Hủy">
+                <input type="submit" value="Đăng ký">
+                
+            </form>
+        </fieldset>
+
+    </main>
+
+    <footer class="footer-page">
+        &copy; 2021 Bản quyền thuộc về FreeezeVN.
+        <a href="" class="fa fa-facebook social-network"></a>
+        <a href="" class="fa fa-twitter social-network"></a>
+        <a href="" class="fa fa-pinterest social-network"></a>
+        <a href="#" class="back-to-top"></a>
+    </footer>
+</body>
+</html>

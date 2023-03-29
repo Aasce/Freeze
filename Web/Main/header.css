@@ -1,0 +1,117 @@
+header {
+    grid-area: header-cell;
+
+    margin: 2px 0px;
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+    padding: 0 1px;
+
+    background-image: url("../../Data/TH_B2_Data/header.png");
+}
+
+.header-img1 {
+    height: 100px;
+    position: absolute;
+    top: -30px;
+
+    animation: headerMoving1 linear 3s 0s normal forwards;
+}
+@keyframes headerMoving1 {
+    from {
+        left: 80%;
+    }
+    to {
+        left: 30%
+    }
+}
+
+.header-img2 {
+    height: 70px;
+    position: absolute;
+    top: -5px;
+
+    animation-fill-mode: forwards;
+    animation: headerMoving2 linear 3s 0s normal forwards;
+}
+@keyframes headerMoving2 {
+    from {
+        left: 80%;
+    }
+    to {
+        left: 45%
+    }
+}
+
+.header-img3 {
+    height: 80px;
+    position: absolute;
+    top: 0;
+
+    animation-fill-mode: forwards;
+    animation: headerMoving3 linear 3s 0s normal forwards;
+}
+@keyframes headerMoving3 {
+    from {
+        left: 80%;
+    }
+    to {
+        left: 63%
+    }
+}
+
+nav div.link {
+    display: contents;
+}
+
+nav div.link a {
+    height: 20px;
+
+    margin: 3px;
+    border: 1px solid #fff;
+    padding: 2px 4px;
+
+    font-size: 17px;
+
+    color: #ed4190;
+    background-color: #ffffff80;
+
+    box-shadow: 
+        0 0 3px 0 #00000066, 
+        0 0 2px 0 #0000004d
+    ;
+}
+
+nav div.link a:hover {
+    color: #fff;
+    background-color: #cd4190;
+}
+
+nav div.header-search {
+    display: flex;
+    justify-content: flex-end;
+
+    float: right;
+
+    margin-right: 5px;
+    padding-bottom: 5px;
+
+}
+
+nav div.header-search button{
+    min-width: 30px;
+
+    border: none;
+    padding: 4px;
+    box-sizing: border-box;
+
+    background-color: #cddc39;
+}
+
+nav div.header-search button.search-button {
+    color: #fff;
+    cursor: pointer;
+}
+
+nav div.header-search button.shopping-cart-button {
+    color: #ed4190;
+}

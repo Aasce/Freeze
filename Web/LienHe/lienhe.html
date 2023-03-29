@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ</title>
+    <link rel="icon" href="../../Data/TH_B1_Data/images/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../Main/style.css">
+    <link rel="stylesheet" href="../Main/header.css">
+    <link rel="stylesheet" href="../Main/main.css">
+    <link rel="stylesheet" href="../Main/footer.css">
+
+    <link rel="stylesheet" href="lienhe.css">
+</head>
+
+<body>
+    <header class="header-page">
+        <a href="../TrangChu/trangchu.html">
+            <img src="../../Data/TH_B1_Data/images/logo.png" alt="logo-page">
+        </a>
+
+        <div class="header-img">
+            <img src="../../Data/TH_B2_Data/header-img1.png" alt="header-img1" class="header-img1">
+            <img src="../../Data/TH_B2_Data/header-img2.png" alt="header-img2" class="header-img2">
+            <img src="../../Data/TH_B2_Data/header-img3.png" alt="header-img3" class="header-img3">
+        </div>
+
+        
+        <nav>
+            <div class="link">
+                <a href="../TrangChu/trangchu.html">Trang Chủ</a>
+                <a href="../GioiThieu/gioithieu.html">Giới Thiệu</a>
+                <a href="../SanPham/sanpham.html">Sản Phẩm</a>
+                <a href="../TinTuc/tintuc.html">Tin Tức</a>
+                <a href="../DangNhap/dangnhap.html">Đăng Nhập</a>
+                <a href="../DangKy/dangky.html">Đăng Ký</a>
+                <a href="../LienHe/lienhe.html">Liên Hệ</a>
+            </div>
+
+            <div class="header-search">
+                <form action="search.php" method="get">
+                    <input name="search" type="text" placeholder="Nhập nội dung cần tìm...">
+                    <button type="submit" class="fa fa-search search-button" title="Search"> </button>
+                    <button type="button" class="fa fa-shopping-cart shopping-cart-button" title="Shopping cart"> </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Liên hệ</h1>
+        <img src="../../Data/TH_B1_Data/images/lienhe/check-in.png" alt="mappins-img">
+        <h2>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</h2>
+
+        <p>
+            Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cám ơn.
+        </p>
+        
+        <fieldset>
+            <legend>Góp ý</legend>
+            <form action="feedback" method="post">
+                <label for="username">Họ Tên</label>
+                <input name="username" type="text">
+                <br>
+
+                <label for="email">Email</label>
+                <input name="email" type="text">
+                <br>
+
+                <label for="topic">Chủ đề</label>
+                <select name="topic">
+                    <option value="product">Về Sản Phẩm/ Dịch Vụ</option>
+                    <option value="offers">Về Ưu Đãi Thành Viên</option>
+                    <option value="recruit">Về Tin Tuyển Dụng</option>
+                </select>
+                <br>
+
+                <textarea name="content" cols="30" rows="10" placeholder="Nội dung cần liên hệ"></textarea>
+                <br>
+                
+                <input type="submit" value="Gửi">
+            </form>
+        </fieldset>
+
+    </main>
+
+
+    <footer class="footer-page">
+        &copy; 2021 Bản quyền thuộc về FreeezeVN.
+        <a href="" class="fa fa-facebook social-network"></a>
+        <a href="" class="fa fa-twitter social-network"></a>
+        <a href="" class="fa fa-pinterest social-network"></a>
+        <a href="#" class="back-to-top"></a>
+    </footer>
+</body>
+</html>

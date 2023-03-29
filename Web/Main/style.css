@@ -1,0 +1,51 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "header-cell" 
+        "main-cell"
+        "footer-cell"
+    ;
+    
+    margin: 0px auto;
+    border: 1px;
+    padding: 0px 5px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+
+}
+
+h1 {
+    width: fit-content;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    margin: 12px 0px 16px;
+
+    color: #ed4190;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    line-height: 34px;
+}
+
+h1::after {
+    content: "";
+
+    height: 3px;
+    width: 100%;
+
+    transform: rotateX(-12deg), translateX(50%);
+
+    display: block;
+    margin: 12px 0px 16px;
+
+    background-image: radial-gradient(#cddc39, #fff);
+
+}
+

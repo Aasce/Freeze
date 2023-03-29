@@ -1,0 +1,22 @@
+main {
+    display: grid;
+    grid-template-areas: 
+        "main-cell aside-cell"
+    ;
+}
+
+.bg-home {
+    width: 100%;
+}
+
+article {
+    grid-area: main-cell;
+}
+
+aside {
+    grid-area: aside-cell;
+}
+
+article p {
+    padding: 3px;
+}

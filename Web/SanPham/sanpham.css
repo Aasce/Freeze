@@ -1,0 +1,60 @@
+main {
+    display: grid;
+    grid-template-areas: 
+        "main-cell"
+    ;
+}
+
+
+section {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    
+    /* color: #ed4190; */
+    color: #000;
+}
+
+section article {
+    max-width: 33%;
+    min-width: 400px;
+    display: flex;
+    float: left;
+}
+
+section article div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: stretch;
+
+    margin: 3px;
+    border: solid 1px #dbd7d9;
+    border-radius: 5px;
+
+    background-image: linear-gradient(to top ,#cddc39 0%, rgba(0, 0, 0, 0) 10%);
+}
+
+section article div img {
+    display: block;
+    margin: auto;
+}
+
+section article div h2 {
+    display: flex;
+    justify-content: center;
+
+    color: #ed4190;
+}
+
+section article div span {
+    width: 100%;
+    display: block;
+    margin: 4px;
+    padding: 3px;
+
+    line-height: 2;
+}
+

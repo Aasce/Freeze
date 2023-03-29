@@ -1,0 +1,43 @@
+footer {
+    grid-area: footer-cell;
+
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2px;
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+    padding: 0 1px;
+
+    
+
+    color: #000;
+}
+
+a.social-network {
+    margin-left: 10px;
+
+    color: #ed4190;
+}
+
+a.back-to-top {
+    width: 50px;
+    height: 50px;
+
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+
+    border: none;
+    padding: 10px; 
+    box-sizing: border-box;
+
+    color: #ed4190;
+    background-image: url("../../Data/TH_B2_Data/top.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
