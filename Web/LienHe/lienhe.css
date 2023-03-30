@@ -1,0 +1,52 @@
+main {
+    margin-top: 60px;
+}
+
+.address {
+    margin-left: 10px;
+}
+
+.address .map-marker {
+    min-width: 30px;
+
+    margin: 1px;
+    border: none;
+    padding: 4px;
+    box-sizing: border-box;
+
+    color: #ed4190;
+    background-color: #cddc39;
+}
+
+
+.contact {
+    width: 300px;
+    margin: auto;
+}
+
+.contact label {
+    min-width: 30px;
+
+    margin: 1px;
+    border: none;
+    padding: 4px;
+    box-sizing: border-box;
+
+    color: #fff;
+    background-color: #cddc39;
+}
+
+.contact input[type=text] {
+    width: 80%;
+    height: 20px;
+
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    width: 80%;
+
+    border: 1px solid;
+    border-radius: 5px;
+}

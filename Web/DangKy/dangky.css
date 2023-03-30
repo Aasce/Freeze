@@ -1,0 +1,33 @@
+main {
+    margin-top: 60px;
+}
+
+.sign-up {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.sign-up img {
+    width: calc(50% + 30px);
+}
+
+.sign-up label {
+    min-width: 30px;
+
+    margin: 1px;
+    border: none;
+    padding: 4px;
+    box-sizing: border-box;
+
+    color: #fff;
+    background-color: #cddc39;
+}
+
+.sign-up input[type=text], input[type=passwork] {
+    width: 50%;
+    height: 20px;
+    
+    border: 1px solid;
+    border-radius: 5px;
+}

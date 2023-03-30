@@ -51,37 +51,43 @@
     
     <main>
         <h1>Liên hệ</h1>
-        <img src="../../Data/TH_B1_Data/images/lienhe/check-in.png" alt="mappins-img">
-        <h2>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</h2>
 
-        <p>
+        <p class="address">
+            <span class="fa fa-map-marker map-marker"></span>
+            <b>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</b>
             Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cám ơn.
         </p>
         
         <fieldset>
             <legend>Góp ý</legend>
-            <form action="feedback" method="post">
-                <label for="username">Họ Tên</label>
-                <input name="username" type="text">
-                <br>
 
-                <label for="email">Email</label>
-                <input name="email" type="text">
-                <br>
+            <div class="contact">
+                <form action="feedback" method="post">
+                    <label for="username" class="fa fa-user"></label>
+                    <input name="username" type="text" placeholder="Vui lòng nhập Họ Tên của bạn">
+                    <br>
 
-                <label for="topic">Chủ đề</label>
-                <select name="topic">
-                    <option value="product">Về Sản Phẩm/ Dịch Vụ</option>
-                    <option value="offers">Về Ưu Đãi Thành Viên</option>
-                    <option value="recruit">Về Tin Tuyển Dụng</option>
-                </select>
-                <br>
+                    <label for="email" class="fa fa-envelope"></label>
+                    <input name="email" type="text" placeholder="Vui lòng nhập địa chỉ Email của bạn">
+                    <br>
 
-                <textarea name="content" cols="30" rows="10" placeholder="Nội dung cần liên hệ"></textarea>
-                <br>
-                
-                <input type="submit" value="Gửi">
-            </form>
+                    <label for="topic" class="fa fa-list"></label>
+                    <select name="topic">
+                        <option value="product">Về Sản Phẩm/ Dịch Vụ</option>
+                        <option value="offers">Về Ưu Đãi Thành Viên</option>
+                        <option value="recruit">Về Tin Tuyển Dụng</option>
+                    </select>
+                    <br>
+
+                    <label for="content" class="fa fa-file-text"></label>
+                    <textarea name="content" cols="30" rows="10" placeholder="Nội dung cần liên hệ"></textarea>
+                    <br>
+                    
+                    <input type="submit" value="Gửi">
+                </form>   
+
+            </div>
+
         </fieldset>
 
     </main>

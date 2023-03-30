@@ -52,37 +52,41 @@
     <main>
         <fieldset>
             <legend>ĐĂNG KÝ</legend>
-            <form action="signup.php" method="post">
-                <label for="email">Email</label>
-                <input name="email" type="text">
-                <br>
-                
-                <label for="passwork">Mật khẩu</label>
-                <input name="passwork" type="passwork">
-                <br>
+            <div class="sign-up">
+                <form action="signup.php" method="post">
+                    <label for="email" class="fa fa-envelope"></label>
+                    <input name="email" type="text">
+                    <br>
+                    
+                    <label for="passwork" class="fa fa-key"></label>
+                    <input name="passwork" type="passwork">
+                    <br>
 
-                <label for="retype-passwork">Nhập lại mật khẩu</label>
-                <input name="retype-passwork" type="passwork">
-                <br>
+                    <label for="retype-passwork" class="fa fa-key"></label>
+                    <input name="retype-passwork" type="passwork">
+                    <br>
 
-                <label for="member-level">Cấp độ thành viên</label>
-                <input name="member-level" type="radio"> Bạc
-                <input name="member-level" type="radio"> Vàng
-                <input name="member-level" type="radio"> Bạch Kim
-                <br>
+                    <label for="member-level" class="fa fa-gift"></label>
+                    <input name="member-level" type="radio"> Bạc
+                    <input name="member-level" type="radio"> Vàng
+                    <input name="member-level" type="radio"> Bạch Kim
+                    <br>
 
-                <label for="avt-upload">Ảnh đại diện</label>
-                <input type="file" name="avt-upload">
+                    <label for="avt-upload" class="fa fa-user-circle"></label>
+                    <input type="file" name="avt-upload">
 
-                <p>
-                    Thông qua việc tạo tài khoản, bạn đồng ý với 
-                    <a href="">Điều khoản & Quyền riêng tư của chúng tôi</a>.
-                </p>
+                    <p>
+                        Thông qua việc tạo tài khoản, bạn đồng ý với 
+                        <a href="">Điều khoản & Quyền riêng tư của chúng tôi</a>.
+                    </p>
 
-                <input type="submit" value="Hủy">
-                <input type="submit" value="Đăng ký">
-                
-            </form>
+                    <input type="submit" value="Đăng ký">
+                    <input type="submit" value="Hủy">
+                    
+                </form>
+
+            </div>
+
         </fieldset>
 
     </main>
